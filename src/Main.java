@@ -7,14 +7,17 @@ import java.util.Scanner;
         System.out.println("|==========CONTENTS========|");
         System.out.println("| 1. Activity 1            |");
         System.out.println("| 2. Activity 2            |");
-        System.out.println("|==========================|");
-        System.out.print("| Enter Selection:         |");
+        System.out.println("+==========================+");
+        System.out.print("  Enter Selection:  ");
         int select = sc.nextInt();
 
-        if(select == 1){
-            Activity1 act1= new Activity1();
+        if(select == 1) {
+            Activity1 act1 = new Activity1();
             act1.userGreeting();
-        }else{
+        } else if (select == 2) {
+            Activity2 act2 = new Activity2();
+            act2.ticketing_system();
+        } else{
             System.out.println("Selection not Found");
         }
     }
