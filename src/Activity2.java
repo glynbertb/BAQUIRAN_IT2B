@@ -31,12 +31,12 @@ public class Activity2 {
         double peakHoursFee = (hour >= 17 && hour <= 20)? 50.00 : 0.00;
         double totalcost = price + peakHoursFee;
 
-        System.out.println("\n----TICKET BREAKDOWN----");
+        System.out.println("\n-----------TICKET BREAKDOWN------------");
         System.out.printf("Screening Format: %s\n", formatName);
         System.out.printf("Base Ticket Price: PHP %.2f\n",  price);
         System.out.printf("Peak Hour Fee: PHP %.2f\n",  peakHoursFee);
-        System.out.println("--------------------------");
+        System.out.println("---------------------------------------");
         System.out.printf("TOTAL TICKET COST:PHP %.2f\n", totalcost);
-        System.out.println("STATUS         SEEAT RESERVED");
+        System.out.println("STATUS         SEAT RESERVED");
     }
 }
